@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cnm/__init__.py
+cnm/__init__.py.bak
+cnm/config.yml
+cnm/config.yml.bak
+cnm/mainwindow.py
+cnm.egg-info/PKG-INFO
+cnm.egg-info/SOURCES.txt
+cnm.egg-info/dependency_links.txt
+cnm.egg-info/entry_points.txt
+cnm.egg-info/top_level.txt
+cnm/resources/resources.qrc
+cnm/ui/mainwindow.ui
+cnm/ui/style.qss

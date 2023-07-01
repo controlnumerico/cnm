@@ -55,9 +55,5 @@ git remote set-url origin https://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@githu
 
 
 
-
-
-
-
-
-
+git commit -a -m "segundo"
+git push -u origin main

@@ -1,0 +1,21 @@
+Qt is also known as a widget toolkit 
+PyQt es un binding de la biblioteca gráfica Qt para el lenguaje de programación Python.
+
+
+PyQt6 or PySide6
+
+
+
+
+
+
+
+Get  template
+=====================
+
+git clone https://github.com/kcjengr/vcp-template.git
+cd vcp-template
+./copy.sh
+=====================
+
+editvcp vcp1

@@ -9,4 +9,4 @@ class MyMainWindow(VCPMainWindow):
     def __init__(self, *args, **kwargs):
         super(MyMainWindow, self).__init__(*args, **kwargs)
 
-    # add any custom methods here
+    # add any custom methods hereeee

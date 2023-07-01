@@ -1,4 +1,4 @@
- # VCP Template
+ # Template
 
 Very basic QtPyVCP based Virtual Control Panel for LinuxCNC.
 This is intended as a template that you can use as a base for

@@ -1,14 +1,7 @@
 Qt is also known as a widget toolkit 
 PyQt es un binding de la biblioteca gráfica Qt para el lenguaje de programación Python.
 
-
 PyQt6 or PySide6
-
-
-
-
-
-
 
 Get  template
 =====================

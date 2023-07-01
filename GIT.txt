@@ -1,0 +1,63 @@
+git clone https://github.com/kcjengr/vcp-template.git
+cd vcp-template
+./copy.sh
+
+
+
+
+editvcp vcp1
+
+
+
+git version
+
+git init
+
+git status
+git status -s
+
+git add .
+
+git commit -m "new --"
+
+
+
+
+commits que se han realizado
+
+git log --oneline
+
+regresar
+
+git reset --hard identificador
+
+
+
+
+push an existing repository from the command line
+git remote add origin https://github.com/controlnumerico/cnm.git
+git branch -M main
+git push -u origin main
+
+
+
+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
+
+
+
+
+git remote set-url origin 
+https://<githubtoken>@github.com/<username>/<repositoryname>.git
+
+git remote add origin  https://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@github.com/controlnumerico/cnm.git
+
+git remote set-url origin https://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@github.com/controlnumerico/cnm.git
+
+
+
+
+
+
+
+
+

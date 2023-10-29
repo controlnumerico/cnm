@@ -1,5 +1,5 @@
 <RCC>
-  <qresource prefix="/">
+  <qresource prefix="newPrefix">
     <file>CNC_Main_2.png</file>
   </qresource>
 </RCC>

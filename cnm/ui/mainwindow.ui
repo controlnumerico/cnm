@@ -19,8 +19,15 @@
      <widget class="QFrame" name="Gral_Fme_Ext">
       <property name="styleSheet">
        <string notr="true">#Gral_Fme_Ext {
-image: url(/home/cnc/Downloads/CNC_Main_2.png);
-}</string>
+
+
+	image: url(/home/cnc/cnm/cnm/ui/rs/CNC_Main_2.png);
+
+
+
+}
+
+</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -124,6 +131,8 @@ image: url(/home/cnc/Downloads/CNC_Main_2.png);
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="rs/RS.qrc"/>
+ </resources>
  <connections/>
 </ui>

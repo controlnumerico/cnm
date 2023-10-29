@@ -38,8 +38,8 @@
       <widget class="QPushButton" name="exitAppBtn">
        <property name="geometry">
         <rect>
-         <x>400</x>
-         <y>630</y>
+         <x>680</x>
+         <y>520</y>
          <width>101</width>
          <height>91</height>
         </rect>
@@ -70,10 +70,10 @@
       <widget class="ActionButton" name="actionbutton">
        <property name="geometry">
         <rect>
-         <x>470</x>
-         <y>180</y>
-         <width>131</width>
-         <height>131</height>
+         <x>660</x>
+         <y>730</y>
+         <width>111</width>
+         <height>81</height>
         </rect>
        </property>
        <property name="text">

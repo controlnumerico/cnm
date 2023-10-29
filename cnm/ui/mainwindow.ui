@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>886</width>
-    <height>625</height>
+    <width>1148</width>
+    <height>883</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,92 +16,70 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout" stretch="2">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <widget class="ActionButton" name="actionbutton_2">
-            <property name="text">
-             <string>E-Stop</string>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>machine.estop.toggle</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton">
-            <property name="text">
-             <string>Power</string>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>machine.power.toggle</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="RecentFileComboBox" name="recentfilecombobox"/>
-        </item>
-        <item>
-         <widget class="GcodeEditor" name="gcodeeditor"/>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <widget class="ActionButton" name="actionbutton_3">
-            <property name="text">
-             <string>Run</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.run</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_7">
-            <property name="text">
-             <string>Step</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.step</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_4">
-            <property name="text">
-             <string>Pause</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.pause</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_6">
-            <property name="text">
-             <string>Abort</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.abort</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-     </layout>
+     <widget class="QFrame" name="Gral_Fme_Ext">
+      <property name="styleSheet">
+       <string notr="true">#Gral_Fme_Ext {
+image: url(/home/cnc/Downloads/CNC_Main_2.png);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="exitAppBtn">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>180</y>
+         <width>101</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+      </widget>
+      <widget class="ActionButton" name="actionbutton_2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>170</y>
+         <width>191</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>E-Stop</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="actionName" stdset="0">
+        <string>machine.estop.toggle</string>
+       </property>
+      </widget>
+      <widget class="ActionButton" name="actionbutton">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>180</y>
+         <width>131</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Power</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="actionName" stdset="0">
+        <string>machine.power.toggle</string>
+       </property>
+      </widget>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -144,17 +122,6 @@
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
-  </customwidget>
-  <customwidget>
-   <class>RecentFileComboBox</class>
-   <extends>QComboBox</extends>
-   <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
-  </customwidget>
-  <customwidget>
-   <class>GcodeEditor</class>
-   <extends>QFrame</extends>
-   <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

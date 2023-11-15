@@ -394,74 +394,13 @@ color: rgb(56, 54, 57);
 }</string>
                  </property>
                  <property name="text">
-                  <string>   0.000</string>
+                  <string>   0.0000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                </widget>
-                <widget class="DROLineEdit" name="dro_entry_main_y_3">
-                 <property name="geometry">
-                  <rect>
-                   <x>70</x>
-                   <y>160</y>
-                   <width>230</width>
-                   <height>70</height>
-                  </rect>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>300</width>
-                   <height>70</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>LCD MONO</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit{
-background-color: rgb(136, 138, 133,0);
-    border-style: transparant;
-color: rgb(56, 54, 57);
-    font: 36pt &quot;LCD MONO&quot;;
-	border-color: rgb(164, 0, 0);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>     0.000</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="referenceType" stdset="0">
-                  <number>1</number>
-                 </property>
-                 <property name="axisNumber" stdset="0">
-                  <number>1</number>
-                 </property>
-                 <property name="inchFormat" stdset="0">
-                  <string>%9.4f</string>
-                 </property>
-                 <property name="millimeterFormat" stdset="0">
-                  <string>%10.3f</string>
-                 </property>
-                 <property name="degreeFormat" stdset="0">
-                  <string>%10.2f</string>
                  </property>
                  <property name="latheMode" stdset="0">
-                  <number>0</number>
+                  <number>1</number>
                  </property>
                 </widget>
                 <widget class="DROLineEdit" name="dro_entry_main_z_3">
@@ -525,7 +464,7 @@ color: rgb(56, 54, 57);
                   <string>%10.2f</string>
                  </property>
                  <property name="latheMode" stdset="0">
-                  <number>0</number>
+                  <number>1</number>
                  </property>
                 </widget>
                 <widget class="QLabel" name="label">
@@ -557,38 +496,6 @@ background-color: rgb(136, 138, 133,0);
                  </property>
                  <property name="text">
                   <string>X:</string>
-                 </property>
-                </widget>
-                <widget class="QLabel" name="label_2">
-                 <property name="geometry">
-                  <rect>
-                   <x>10</x>
-                   <y>160</y>
-                   <width>51</width>
-                   <height>70</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>LCDMono</family>
-                   <pointsize>40</pointsize>
-                   <weight>75</weight>
-                   <italic>false</italic>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="layoutDirection">
-                  <enum>Qt::RightToLeft</enum>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">color: rgb(0, 102, 220);
-background-color: rgb(136, 138, 133,0);
- 
- 
- </string>
-                 </property>
-                 <property name="text">
-                  <string>Y:</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="label_3">
@@ -919,6 +826,9 @@ color: rgb(56, 54, 57);
                    <bold>false</bold>
                   </font>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
 background-color: rgb(136, 138, 133,0);
@@ -980,6 +890,9 @@ color: rgb(56, 54, 57);
                    <bold>false</bold>
                   </font>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
 background-color: rgb(136, 138, 133,0);
@@ -1040,6 +953,9 @@ color: rgb(56, 54, 57);
                    <italic>false</italic>
                    <bold>false</bold>
                   </font>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
@@ -2021,8 +1937,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="MyStatusBarNewLabel">
                  <property name="geometry">
                   <rect>
-                   <x>50</x>
-                   <y>370</y>
+                   <x>90</x>
+                   <y>1010</y>
                    <width>641</width>
                    <height>41</height>
                   </rect>
@@ -2036,14 +1952,12 @@ background-color: rgb(136, 138, 133,0);
                   </font>
                  </property>
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>TextLabel JJHGFJYFGTUYTFUYTFUYTFUYTFUTYFUTY</string>
                  </property>
                 </widget>
                 <zorder>dro_entry_main_x_3</zorder>
-                <zorder>dro_entry_main_y_3</zorder>
                 <zorder>dro_entry_main_z_3</zorder>
                 <zorder>label</zorder>
-                <zorder>label_2</zorder>
                 <zorder>label_3</zorder>
                 <zorder>label_4</zorder>
                 <zorder>label_5</zorder>
@@ -3729,7 +3643,7 @@ background-color: rgb(136, 138, 133,0);
        <widget class="QLabel" name="label_19">
         <property name="geometry">
          <rect>
-          <x>865</x>
+          <x>850</x>
           <y>15</y>
           <width>51</width>
           <height>31</height>
@@ -3761,7 +3675,7 @@ background-color: rgb(136, 138, 133,0);
        <widget class="QLabel" name="label_20">
         <property name="geometry">
          <rect>
-          <x>830</x>
+          <x>815</x>
           <y>40</y>
           <width>121</width>
           <height>31</height>

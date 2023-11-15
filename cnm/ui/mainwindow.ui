@@ -57,14 +57,14 @@
       <widget class="ActionButton" name="actionbutton_2">
        <property name="geometry">
         <rect>
-         <x>600</x>
+         <x>340</x>
          <y>620</y>
          <width>191</width>
          <height>101</height>
         </rect>
        </property>
        <property name="text">
-        <string>E-Stop</string>
+        <string>E-Stoper</string>
        </property>
        <property name="checkable">
         <bool>true</bool>

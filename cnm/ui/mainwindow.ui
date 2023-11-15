@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1148</width>
-    <height>883</height>
+    <width>1111</width>
+    <height>875</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -21,7 +24,7 @@
        <string notr="true">#Gral_Fme_Ext {
 
 
-	image: url(/home/cnc/cnm/cnm/ui/rs/CNC_Main_2.png);
+	image: url(/home/cnc/Desktop/CNC_Main_2.png);
 
 
 
@@ -35,11 +38,14 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
       <widget class="QPushButton" name="exitAppBtn">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>180</y>
+         <x>680</x>
+         <y>520</y>
          <width>101</width>
          <height>91</height>
         </rect>
@@ -51,8 +57,8 @@
       <widget class="ActionButton" name="actionbutton_2">
        <property name="geometry">
         <rect>
-         <x>190</x>
-         <y>170</y>
+         <x>600</x>
+         <y>620</y>
          <width>191</width>
          <height>101</height>
         </rect>
@@ -70,10 +76,10 @@
       <widget class="ActionButton" name="actionbutton">
        <property name="geometry">
         <rect>
-         <x>470</x>
-         <y>180</y>
-         <width>131</width>
-         <height>131</height>
+         <x>660</x>
+         <y>730</y>
+         <width>111</width>
+         <height>81</height>
         </rect>
        </property>
        <property name="text">

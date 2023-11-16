@@ -384,6 +384,9 @@ image: url(/home/cnc/Downloads/CNC_Main_2.png);
                    <bold>false</bold>
                   </font>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
 background-color: rgb(136, 138, 133,0);
@@ -394,7 +397,7 @@ color: rgb(56, 54, 57);
 }</string>
                  </property>
                  <property name="text">
-                  <string>   0.0000</string>
+                  <string>   0.000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -432,6 +435,9 @@ color: rgb(56, 54, 57);
                    <italic>false</italic>
                    <bold>false</bold>
                   </font>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
@@ -627,6 +633,9 @@ background-color: rgb(136, 138, 133,0);
                    <bold>false</bold>
                   </font>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
 background-color: rgb(136, 138, 133,0);
@@ -674,67 +683,6 @@ color: rgb(56, 54, 57);
                   <enum>Qt::Vertical</enum>
                  </property>
                 </widget>
-                <widget class="DROLineEdit" name="dro_entry_main_x_5">
-                 <property name="geometry">
-                  <rect>
-                   <x>310</x>
-                   <y>175</y>
-                   <width>141</width>
-                   <height>35</height>
-                  </rect>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>300</width>
-                   <height>70</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>LCD MONO</family>
-                   <pointsize>22</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit{
-background-color: rgb(136, 138, 133,0);
-    border-style: transparant;
-color: rgb(56, 54, 57);
-    font: 22pt &quot;LCD MONO&quot;;
-	border-color: rgb(164, 0, 0);
-}</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="referenceType" stdset="0">
-                  <number>2</number>
-                 </property>
-                 <property name="axisNumber" stdset="0">
-                  <number>1</number>
-                 </property>
-                 <property name="inchFormat" stdset="0">
-                  <string>%9.4f</string>
-                 </property>
-                 <property name="millimeterFormat" stdset="0">
-                  <string>%10.3f</string>
-                 </property>
-                 <property name="degreeFormat" stdset="0">
-                  <string>%10.2f</string>
-                 </property>
-                 <property name="latheMode" stdset="0">
-                  <number>0</number>
-                 </property>
-                </widget>
                 <widget class="DROLineEdit" name="dro_entry_main_x_6">
                  <property name="geometry">
                   <rect>
@@ -764,6 +712,9 @@ color: rgb(56, 54, 57);
                    <italic>false</italic>
                    <bold>false</bold>
                   </font>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
@@ -910,70 +861,6 @@ color: rgb(56, 54, 57);
                  </property>
                  <property name="axisNumber" stdset="0">
                   <number>0</number>
-                 </property>
-                 <property name="inchFormat" stdset="0">
-                  <string>%9.4f</string>
-                 </property>
-                 <property name="millimeterFormat" stdset="0">
-                  <string>%10.3f</string>
-                 </property>
-                 <property name="degreeFormat" stdset="0">
-                  <string>%10.2f</string>
-                 </property>
-                 <property name="latheMode" stdset="0">
-                  <number>0</number>
-                 </property>
-                </widget>
-                <widget class="DROLineEdit" name="dro_entry_main_x_9">
-                 <property name="geometry">
-                  <rect>
-                   <x>450</x>
-                   <y>175</y>
-                   <width>151</width>
-                   <height>38</height>
-                  </rect>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>300</width>
-                   <height>70</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>LCD MONO</family>
-                   <pointsize>24</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="focusPolicy">
-                  <enum>Qt::NoFocus</enum>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit{
-background-color: rgb(136, 138, 133,0);
-    border-style: transparant;
-color: rgb(56, 54, 57);
-    font: 24pt &quot;LCD MONO&quot;;
-	border-color: rgb(164, 0, 0);
-}</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="referenceType" stdset="0">
-                  <number>0</number>
-                 </property>
-                 <property name="axisNumber" stdset="0">
-                  <number>1</number>
                  </property>
                  <property name="inchFormat" stdset="0">
                   <string>%9.4f</string>
@@ -1292,38 +1179,6 @@ background-color: rgb(136, 138, 133,0);
                  </property>
                  <property name="text">
                   <string>G53 X:</string>
-                 </property>
-                </widget>
-                <widget class="QLabel" name="label_13">
-                 <property name="geometry">
-                  <rect>
-                   <x>460</x>
-                   <y>150</y>
-                   <width>71</width>
-                   <height>31</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>lcd phone</family>
-                   <pointsize>14</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="layoutDirection">
-                  <enum>Qt::RightToLeft</enum>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">
-color: rgb(1, 123, 206);
-background-color: rgb(136, 138, 133,0);
- 
- </string>
-                 </property>
-                 <property name="text">
-                  <string>G53 Y:</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="label_14">
@@ -1963,11 +1818,9 @@ background-color: rgb(136, 138, 133,0);
                 <zorder>label_5</zorder>
                 <zorder>dro_entry_main_x_4</zorder>
                 <zorder>line</zorder>
-                <zorder>dro_entry_main_x_5</zorder>
                 <zorder>dro_entry_main_x_6</zorder>
                 <zorder>dro_entry_main_x_7</zorder>
                 <zorder>dro_entry_main_x_8</zorder>
-                <zorder>dro_entry_main_x_9</zorder>
                 <zorder>line_2</zorder>
                 <zorder>label_7</zorder>
                 <zorder>label_8</zorder>
@@ -1977,7 +1830,6 @@ background-color: rgb(136, 138, 133,0);
                 <zorder>label_10</zorder>
                 <zorder>label_11</zorder>
                 <zorder>label_12</zorder>
-                <zorder>label_13</zorder>
                 <zorder>label_14</zorder>
                 <zorder>statuslabel_12</zorder>
                 <zorder>label_15</zorder>
@@ -3428,6 +3280,9 @@ background-color: transparent;
           <height>37</height>
          </size>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="styleSheet">
          <string notr="true">ActionCheckBox::indicator:checked {
 image: url(/home/cnc/Downloads/CNC_on_toggle.png);
@@ -4411,8 +4266,8 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
        <widget class="QPushButton" name="exitAppBtn">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>640</y>
+          <x>950</x>
+          <y>1190</y>
           <width>125</width>
           <height>125</height>
          </rect>

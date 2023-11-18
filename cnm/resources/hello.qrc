@@ -1,5 +1,5 @@
 <RCC>
-  <qresource prefix="pantalla">
+  <qresource prefix="imagnees">
     <file>CNC_Main_2.png</file>
   </qresource>
 </RCC>

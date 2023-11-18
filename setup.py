@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="cnm",
-    version="0.0.1",
+    version="0.0.2",
     author="John Doe",
     author_email="<doe.john@example.com>",
     description="CNM - A QtPyVCP based Virtual Control Panel for LinuxCNC",

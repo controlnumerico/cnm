@@ -1645,10 +1645,10 @@ color: rgb(56, 54, 57);
                 <widget class="VTKBackPlot" name="vtk">
                  <property name="geometry">
                   <rect>
-                   <x>430</x>
-                   <y>420</y>
-                   <width>300</width>
-                   <height>300</height>
+                   <x>650</x>
+                   <y>460</y>
+                   <width>161</width>
+                   <height>261</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -1674,41 +1674,6 @@ color: rgb(56, 54, 57);
                    <green>159</green>
                    <blue>207</blue>
                   </color>
-                 </property>
-                </widget>
-                <widget class="GcodeEditor" name="gcodeeditor">
-                 <property name="geometry">
-                  <rect>
-                   <x>10</x>
-                   <y>420</y>
-                   <width>421</width>
-                   <height>431</height>
-                  </rect>
-                 </property>
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>DejaVu Sans Mono</family>
-                   <pointsize>20</pointsize>
-                   <italic>true</italic>
-                  </font>
-                 </property>
-                 <property name="focusPolicy">
-                  <enum>Qt::NoFocus</enum>
-                 </property>
-                 <property name="editor" stdset="0">
-                  <bool>false</bool>
                  </property>
                 </widget>
                 <widget class="StatusLabel" name="statuslabel_7">
@@ -2022,6 +1987,91 @@ background-color: rgb(136, 138, 133,0);
                   <string>Status:</string>
                  </property>
                 </widget>
+                <widget class="ActionButton" name="btn_loadrun">
+                 <property name="geometry">
+                  <rect>
+                   <x>650</x>
+                   <y>200</y>
+                   <width>111</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Load Run</string>
+                 </property>
+                </widget>
+                <widget class="GcodeTextEdit" name="gcodetextedit_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>430</y>
+                   <width>591</width>
+                   <height>401</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Plain</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
+                 </property>
+                 <property name="sizeAdjustPolicy">
+                  <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                 </property>
+                 <property name="tabStopWidth">
+                  <number>100</number>
+                 </property>
+                 <property name="syntaxHighlighting" stdset="0">
+                  <bool>false</bool>
+                 </property>
+                 <property name="currentLineBackground" stdset="0">
+                  <color>
+                   <red>214</red>
+                   <green>214</green>
+                   <blue>221</blue>
+                  </color>
+                 </property>
+                 <property name="marginBackground" stdset="0">
+                  <color>
+                   <red>146</red>
+                   <green>150</green>
+                   <blue>149</blue>
+                  </color>
+                 </property>
+                 <property name="marginCurrentLineBackground" stdset="0">
+                  <color>
+                   <red>110</red>
+                   <green>110</green>
+                   <blue>110</blue>
+                  </color>
+                 </property>
+                 <property name="marginColor" stdset="0">
+                  <color>
+                   <red>49</red>
+                   <green>49</green>
+                   <blue>49</blue>
+                  </color>
+                 </property>
+                 <property name="marginCurrentLineColor" stdset="0">
+                  <color>
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </property>
+                </widget>
                 <zorder>dro_entry_main_x_3</zorder>
                 <zorder>dro_entry_main_z_3</zorder>
                 <zorder>label</zorder>
@@ -2055,11 +2105,12 @@ background-color: rgb(136, 138, 133,0);
                 <zorder>statuslabel_18</zorder>
                 <zorder>statuslabel_16</zorder>
                 <zorder>vtk</zorder>
-                <zorder>gcodeeditor</zorder>
                 <zorder>statuslabel_7</zorder>
                 <zorder>label_29</zorder>
                 <zorder>line_4</zorder>
                 <zorder>MyStatusBarNewLabel</zorder>
+                <zorder>btn_loadrun</zorder>
+                <zorder>gcodetextedit_2</zorder>
                </widget>
               </item>
              </layout>
@@ -3821,10 +3872,10 @@ image: url(/home/cnc/.iMG/CNC_Home_pressed.png);
 }</string>
         </property>
         <property name="text">
-         <string>REF ALL</string>
+         <string>HOME</string>
         </property>
         <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'REF ALL'&quot;, &quot;name&quot;: &quot;reference_all&quot;}]</string>
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'HOME'&quot;, &quot;name&quot;: &quot;reference_all&quot;}]</string>
         </property>
         <property name="actionName" stdset="0">
          <string>machine.home.all</string>
@@ -5596,11 +5647,6 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
     <string>Ctrl+Q</string>
    </property>
   </action>
-  <action name="actionOPEN">
-   <property name="text">
-    <string>oPEN</string>
-   </property>
-  </action>
   <action name="actionOpen">
    <property name="text">
     <string>Open</string>
@@ -5664,6 +5710,11 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
    <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
   </customwidget>
   <customwidget>
+   <class>GcodeTextEdit</class>
+   <extends>QPlainTextEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
+  </customwidget>
+  <customwidget>
    <class>JogIncrementWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.input_widgets.jog_increment</header>
@@ -5692,12 +5743,6 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
    <class>HalBarIndicator</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.hal_widgets.hal_bar_indicator</header>
-  </customwidget>
-  <customwidget>
-   <class>GcodeEditor</class>
-   <extends>QFrame</extends>
-   <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>

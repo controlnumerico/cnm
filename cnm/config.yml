@@ -10,10 +10,7 @@ vcp:
   version: v0.0.1
   author: My Name
   description: >
-    Put a short description of your VCP here. This will be
-    shown in the VCP Chooser when launching QtPyVCP with the
-    --chooser option.
-
+    short description
 
     Examples of what to included here:
       * VCP Features
@@ -25,6 +22,7 @@ data_plugins:
   status:
     kwargs:
       cycle_time: 75
+
 
 windows:
 

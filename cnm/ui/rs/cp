@@ -1,2 +1,4 @@
 /usr/local/lib/python3.11/dist-packages/cnm/ui/rs
 
+cp * /home/cnc/.iMG/ 
+

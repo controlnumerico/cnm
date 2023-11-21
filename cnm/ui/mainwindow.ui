@@ -52,7 +52,7 @@
 
 
 
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/CNC_Main_3_fw.png);
+image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
 
 
 }</string>
@@ -1647,8 +1647,8 @@ color: rgb(56, 54, 57);
                   <rect>
                    <x>430</x>
                    <y>420</y>
-                   <width>401</width>
-                   <height>411</height>
+                   <width>300</width>
+                   <height>300</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -3497,12 +3497,13 @@ background-color: transparent;
         </property>
         <property name="styleSheet">
          <string notr="true">ActionCheckBox::indicator:checked {
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/CNC_on_toggle.png);
+
+image: url(/home/cnc/.iMG/CNC_on_toggle.png);
 
 }
 
 ActionCheckBox::indicator:unchecked {
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/CNC_off_toggle.png);
+image: url(/home/cnc/.iMG/CNC_off_toggle.png);
 }
 
 
@@ -5688,7 +5689,6 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E_Stop_Inac.png);
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="rs/RS.qrc"/>
   <include location="../../../probe_basic/src/probe_basic/probe_basic.qrc"/>
  </resources>
  <connections/>

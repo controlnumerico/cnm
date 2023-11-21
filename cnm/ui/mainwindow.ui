@@ -280,7 +280,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <enum>QTabWidget::South</enum>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <property name="usesScrollButtons">
          <bool>false</bool>
@@ -1647,8 +1647,8 @@ color: rgb(56, 54, 57);
                   <rect>
                    <x>650</x>
                    <y>460</y>
-                   <width>161</width>
-                   <height>261</height>
+                   <width>300</width>
+                   <height>300</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -2123,7 +2123,366 @@ background-color: rgb(136, 138, 133,0);
          <attribute name="title">
           <string>- FILE -</string>
          </attribute>
-         <layout class="QHBoxLayout" name="horizontalLayout_139"/>
+         <layout class="QHBoxLayout" name="horizontalLayout_139">
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QFrame" name="frame_35">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>750</width>
+               <height>731</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>750</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">.QFrame{
+    background-color: rgb(51, 57, 59);
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_37">
+              <property name="spacing">
+               <number>9</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_124">
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="device_folder_up_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>110</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>110</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>  FOLDER UP</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../../../probe_basic/src/probe_basic/probe_basic.qrc">
+                    <normaloff>:/images/folder_up.png</normaloff>:/images/folder_up.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>30</width>
+                    <height>17</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="RemovableDeviceComboBox" name="removabledevicecombobox">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>1</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 12pt &quot;Bebas Kai&quot;;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="device_eject_usb_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>EJECT USB</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_125">
+                <item>
+                 <widget class="FileSystemTable" name="filesystemtable_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::WheelFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">FileSystemTable {
+	color: black;
+   	border: 1px;
+	border-color: rgb(120, 120, 120);
+	border-style: solid;
+	background-color: rgb(238, 238, 236);
+    font: 30pt &quot;Bebas Kai&quot;;
+}
+
+QHeaderView {
+    background-color: rgb(220, 220, 220);
+	color: black;
+    border: none;
+	border-radius:none;
+	border-style: none;
+	font: 35pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="sizeAdjustPolicy">
+                   <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                  </property>
+                  <property name="autoScroll">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoScrollMargin">
+                   <number>20</number>
+                  </property>
+                  <property name="selectionMode">
+                   <enum>QAbstractItemView::SingleSelection</enum>
+                  </property>
+                  <property name="textElideMode">
+                   <enum>Qt::ElideRight</enum>
+                  </property>
+                  <property name="showGrid">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sortingEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="hiddenColumns" stdset="0">
+                   <string>2, 4,1</string>
+                  </property>
+                  <property name="fixedNameColumn" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="nameColumnsWidth" stdset="0">
+                   <number>250</number>
+                  </property>
+                  <attribute name="horizontalHeaderCascadingSectionResizes">
+                   <bool>true</bool>
+                  </attribute>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_126">
+                <property name="spacing">
+                 <number>12</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="device_delete_item_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string> DELETE</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../../../probe_basic/src/probe_basic/probe_basic.qrc">
+                    <normaloff>:/images/delete.png</normaloff>:/images/delete.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>14</width>
+                    <height>14</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="device_rename_item_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>90</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>RENAME</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="copy_from_usb_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+    padding-right: 4px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>TO PC  </string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../../../probe_basic/src/probe_basic/probe_basic.qrc">
+                    <normaloff>:/images/right_arrow.png</normaloff>:/images/right_arrow.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="file_tab">
          <attribute name="title">
@@ -5648,6 +6007,9 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
    </property>
   </action>
   <action name="actionOpen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
@@ -5663,7 +6025,7 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
     <string>Fullscreen</string>
    </property>
    <property name="shortcut">
-    <string>F11</string>
+    <string>F5</string>
    </property>
   </action>
  </widget>
@@ -5718,6 +6080,16 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
    <class>JogIncrementWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.input_widgets.jog_increment</header>
+  </customwidget>
+  <customwidget>
+   <class>FileSystemTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
+  </customwidget>
+  <customwidget>
+   <class>RemovableDeviceComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
   </customwidget>
   <customwidget>
    <class>ActionSlider</class>

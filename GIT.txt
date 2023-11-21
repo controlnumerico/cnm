@@ -2,12 +2,7 @@ git clone https://github.com/kcjengr/vcp-template.git
 cd vcp-template
 ./copy.sh
 
-
-
-
 editvcp vcp1
-
-
 
 git version
 
@@ -17,7 +12,6 @@ git status
 git status -s
 
 git add .
-
 git commit -m "new --"
 
 
@@ -56,5 +50,12 @@ git remote set-url origin https://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@githu
 
 
 
-git commit -a -m "segundo"
+
+git add . 
+git commit -m "new --"
 git push -u origin main
+
+
+
+
+

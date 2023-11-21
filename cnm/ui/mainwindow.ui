@@ -3813,11 +3813,11 @@ font: 25pt &quot;Bebas Kai&quot;;
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Home.png);
+image: url(/home/cnc/.iMG/CNC_Home.png);
 }
 
 #ref_all_button_6:pressed {
-image: url(/home/cnc/Downloads/CNC_Home_pressed.png);
+image: url(/home/cnc/.iMG/CNC_Home_pressed.png);
 }</string>
         </property>
         <property name="text">
@@ -3881,11 +3881,12 @@ font: 40pt &quot;Bebas Kai&quot;;
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Zero.png);
+ 
+image: url(/home/cnc/.iMG/CNC_Zero.png);
 }
 
 #zero_x_button_9:pressed {
-image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
+image: url(/home/cnc/.iMG/CNC_Zero_pressed.png);
 }</string>
         </property>
         <property name="text">
@@ -4190,7 +4191,7 @@ image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/70x70.png);
+image: url(/home/cnc/.iMG/70x70.png);
 }
 
 #mode_auto:pressed {
@@ -4230,7 +4231,7 @@ image: url(/home/cnc/Downloads/CNC_Mode_Auto_pressed.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/70x70.png);
+image: url(/home/cnc/.iMG/70x70.png);
 }
 
 #mode_mdi:pressed {
@@ -4273,7 +4274,7 @@ image: url(/home/cnc/Downloads/CNC_Mode_MDI_pressed.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/70x70.png);
+image: url(/home/cnc/.iMG/70x70.png);
 }
 
 #mode_manual:pressed {
@@ -5018,7 +5019,7 @@ image: url(/home/cnc/Downloads/CNC_off_toggle.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
+image: url(/home/cnc/.iMG/btn_jog.png);
 }</string>
         </property>
         <property name="text">
@@ -5068,7 +5069,8 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
+ 
+image: url(/home/cnc/.iMG/btn_jog.png);
 }</string>
         </property>
         <property name="text">
@@ -5120,7 +5122,7 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
+image: url(/home/cnc/.iMG/btn_jog.png);
 }</string>
         </property>
         <property name="text">
@@ -5166,7 +5168,7 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/btn_jog.png);
+image: url(/home/cnc/.iMG/btn_jog.png);
 }</string>
         </property>
         <property name="text">
@@ -5451,11 +5453,13 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/Btn_black_pressed.p
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/Feed_off.png);
+ 
+image: url(/home/cnc/.iMG/Feed_off.png);
 }
 
 #Feed:pressed {
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E-Stop-Inac.png);
+ 
+image: url(/home/cnc/.iMG/E-Stop-Inac.png);
 }</string>
         </property>
         <property name="text">
@@ -5506,11 +5510,13 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E-Stop-Inac.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/Stop_off.png);
+ 
+image: url(/home/cnc/.iMG/Stop_off.png);
 }
 
 #Stop:pressed {
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E-Stop-Inac.png);
+
+image: url(/home/cnc/.iMG/Feed_off.png);
 }</string>
         </property>
         <property name="text">
@@ -5534,11 +5540,13 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E-Stop-Inac.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/Cycle_start_off.png);
+ 
+image: url(/home/cnc/.iMG/Cycle_start_off.png);
 }
 
 #Start:pressed {
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E-Stop-Inac.png);
+ 
+image: url(/home/cnc/.iMG/E-Stop-Inac.png);
 }</string>
         </property>
         <property name="actionName" stdset="0">
@@ -5559,11 +5567,13 @@ image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E-Stop-Inac.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E_Stop_Act.png);
+ 
+image: url(/home/cnc/.iMG/E_Stop_Act.png);
 }
 
 #EStoper:pressed {
-image: url(/usr/local/lib/python3.11/dist-packages/cnm/ui/rs/E_Stop_Inac.png);
+ 
+image: url(/home/cnc/.iMG/E_Stop_Inac.png);
 }</string>
         </property>
         <property name="actionName" stdset="0">

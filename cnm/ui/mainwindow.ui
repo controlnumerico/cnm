@@ -114,7 +114,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
           <x>104</x>
           <y>130</y>
           <width>835</width>
-          <height>701</height>
+          <height>1171</height>
          </rect>
         </property>
         <property name="sizePolicy">
@@ -2017,6 +2017,9 @@ background-color: rgb(136, 138, 133,0);
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true"/>

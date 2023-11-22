@@ -936,6 +936,9 @@ background-color: rgb(136, 138, 133,0);
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::StrongFocus</enum>
+                 </property>
                  <property name="layoutDirection">
                   <enum>Qt::RightToLeft</enum>
                  </property>
@@ -2138,10 +2141,10 @@ background-color: rgb(136, 138, 133,0);
             <widget class="QFrame" name="frame_35">
              <property name="geometry">
               <rect>
-               <x>10</x>
+               <x>20</x>
                <y>10</y>
                <width>420</width>
-               <height>435</height>
+               <height>501</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -2330,7 +2333,7 @@ QHeaderView {
                    <bool>true</bool>
                   </property>
                   <property name="autoScrollMargin">
-                   <number>20</number>
+                   <number>50</number>
                   </property>
                   <property name="selectionMode">
                    <enum>QAbstractItemView::SingleSelection</enum>

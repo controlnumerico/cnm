@@ -114,7 +114,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
           <x>104</x>
           <y>130</y>
           <width>835</width>
-          <height>1173</height>
+          <height>701</height>
          </rect>
         </property>
         <property name="sizePolicy">
@@ -263,7 +263,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <cursorShape>ArrowCursor</cursorShape>
         </property>
         <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
+         <enum>Qt::WheelFocus</enum>
         </property>
         <property name="autoFillBackground">
          <bool>false</bool>
@@ -280,7 +280,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <enum>QTabWidget::South</enum>
         </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <property name="usesScrollButtons">
          <bool>false</bool>
@@ -380,7 +380,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
                   </font>
                  </property>
                  <property name="focusPolicy">
-                  <enum>Qt::NoFocus</enum>
+                  <enum>Qt::ClickFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
@@ -432,7 +432,7 @@ color: rgb(56, 54, 57);
                   </font>
                  </property>
                  <property name="focusPolicy">
-                  <enum>Qt::NoFocus</enum>
+                  <enum>Qt::ClickFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLineEdit{
@@ -937,7 +937,7 @@ background-color: rgb(136, 138, 133,0);
                   </font>
                  </property>
                  <property name="focusPolicy">
-                  <enum>Qt::StrongFocus</enum>
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="layoutDirection">
                   <enum>Qt::RightToLeft</enum>
@@ -2144,7 +2144,7 @@ background-color: rgb(136, 138, 133,0);
                <x>20</x>
                <y>10</y>
                <width>420</width>
-               <height>501</height>
+               <height>551</height>
               </rect>
              </property>
              <property name="sizePolicy">

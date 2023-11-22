@@ -114,7 +114,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
           <x>104</x>
           <y>130</y>
           <width>835</width>
-          <height>901</height>
+          <height>1173</height>
          </rect>
         </property>
         <property name="sizePolicy">
@@ -280,7 +280,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <enum>QTabWidget::South</enum>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <property name="usesScrollButtons">
          <bool>false</bool>
@@ -1647,8 +1647,8 @@ color: rgb(56, 54, 57);
                   <rect>
                    <x>560</x>
                    <y>400</y>
-                   <width>221</width>
-                   <height>261</height>
+                   <width>300</width>
+                   <height>300</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -2132,13 +2132,16 @@ background-color: rgb(136, 138, 133,0);
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
             <widget class="QFrame" name="frame_34">
              <property name="geometry">
               <rect>
-               <x>20</x>
-               <y>20</y>
-               <width>721</width>
-               <height>631</height>
+               <x>10</x>
+               <y>10</y>
+               <width>791</width>
+               <height>731</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -2287,7 +2290,7 @@ background-color: rgb(136, 138, 133,0);
 	border-color: rgb(120, 120, 120);
 	border-style: solid;
 	background-color: rgb(238, 238, 236);
-    font: 12pt &quot;Bebas Kai&quot;;
+    font: 25pt &quot;Bebas Kai&quot;;
 }
 
 QHeaderView {
@@ -2296,7 +2299,7 @@ QHeaderView {
     border: none;
 	border-radius:none;
 	border-style: none;
-	font: 13pt &quot;Bebas Kai&quot;;
+	font: 25pt &quot;Bebas Kai&quot;;
 }</string>
                   </property>
                   <property name="sizeAdjustPolicy">
@@ -2538,6 +2541,254 @@ QHeaderView {
                   </property>
                   <property name="text">
                    <string>RENAME</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QFrame" name="frame_36">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>750</y>
+               <width>791</width>
+               <height>301</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">.QFrame{
+    background-color: rgb(51, 57, 59);
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_38">
+              <property name="spacing">
+               <number>9</number>
+              </property>
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>12</number>
+              </property>
+              <property name="rightMargin">
+               <number>10</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="gcodeeditor_label">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 16pt &quot;Bebas Kai&quot;;
+color: white;</string>
+                </property>
+                <property name="text">
+                 <string>G-CODE FILE EDITOR</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="GcodeTextEdit" name="gcodetextedit">
+                <property name="currentLineBackground" stdset="0">
+                 <color>
+                  <red>214</red>
+                  <green>214</green>
+                  <blue>221</blue>
+                 </color>
+                </property>
+                <property name="marginBackground" stdset="0">
+                 <color>
+                  <red>146</red>
+                  <green>150</green>
+                  <blue>149</blue>
+                 </color>
+                </property>
+                <property name="marginCurrentLineBackground" stdset="0">
+                 <color>
+                  <red>110</red>
+                  <green>110</green>
+                  <blue>110</blue>
+                 </color>
+                </property>
+                <property name="marginColor" stdset="0">
+                 <color>
+                  <red>49</red>
+                  <green>49</green>
+                  <blue>49</blue>
+                 </color>
+                </property>
+                <property name="marginCurrentLineColor" stdset="0">
+                 <color>
+                  <red>255</red>
+                  <green>255</green>
+                  <blue>255</blue>
+                 </color>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_129">
+                <item>
+                 <widget class="QPushButton" name="edit_gcode_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>EDIT G-CODE</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="find_replace_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>FIND/REPLACE</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="save_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>SAVE</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="save_as_button">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>35</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+   	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>SAVE AS</string>
                   </property>
                  </widget>
                 </item>

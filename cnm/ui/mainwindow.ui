@@ -263,7 +263,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <cursorShape>ArrowCursor</cursorShape>
         </property>
         <property name="focusPolicy">
-         <enum>Qt::WheelFocus</enum>
+         <enum>Qt::NoFocus</enum>
         </property>
         <property name="autoFillBackground">
          <bool>false</bool>

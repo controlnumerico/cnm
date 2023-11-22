@@ -280,7 +280,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <enum>QTabWidget::South</enum>
         </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <property name="usesScrollButtons">
          <bool>false</bool>
@@ -2281,7 +2281,7 @@ background-color: rgb(136, 138, 133,0);
                 <item>
                  <widget class="FileSystemTable" name="filesystemtable">
                   <property name="focusPolicy">
-                   <enum>Qt::WheelFocus</enum>
+                   <enum>Qt::NoFocus</enum>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">FileSystemTable {
@@ -2618,6 +2618,9 @@ color: white;</string>
               </item>
               <item>
                <widget class="GcodeTextEdit" name="gcodetextedit">
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
                 <property name="currentLineBackground" stdset="0">
                  <color>
                   <red>214</red>

@@ -280,7 +280,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
          <enum>QTabWidget::South</enum>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <property name="usesScrollButtons">
          <bool>false</bool>
@@ -1319,7 +1319,7 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="MDIEntry" name="mdiEntry">
                  <property name="geometry">
                   <rect>
-                   <x>50</x>
+                   <x>30</x>
                    <y>700</y>
                    <width>721</width>
                    <height>50</height>
@@ -2169,9 +2169,7 @@ background-color: rgb(136, 138, 133,0);
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">.QFrame{
-    background-color: rgb(51, 57, 59);
-}</string>
+              <string notr="true"/>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -2491,6 +2489,19 @@ QHeaderView {
                </layout>
               </item>
              </layout>
+            </widget>
+            <widget class="FileSystemTable" name="filesystemtable">
+             <property name="geometry">
+              <rect>
+               <x>450</x>
+               <y>200</y>
+               <width>351</width>
+               <height>391</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
             </widget>
            </widget>
           </item>
@@ -4383,11 +4394,11 @@ font: 40pt &quot;Bebas Kai&quot;;
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Zero.png);
+image: url(/home/cnc/.iMG//CNC_Zero.png);
 }
 
 #zero_y_button_9:pressed {
-image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
+image: url(/home/cnc/.iMG//CNC_Zero_pressed.png);
 }</string>
         </property>
         <property name="text">
@@ -4462,11 +4473,11 @@ font: 40pt &quot;Bebas Kai&quot;;
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Zero.png);
+image: url(/home/cnc/.iMG//CNC_Zero.png);
 }
 
 #zero_z_button_9:pressed {
-image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
+image: url(/home/cnc/.iMG/CNC_Zero_pressed.png);
 }</string>
         </property>
         <property name="text">
@@ -4544,11 +4555,11 @@ font: 40pt &quot;Bebas Kai&quot;;
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_REF.png);
+image: url(/home/cnc/.iMG/CNC_REF.png);
 }
 
 #zero_all_button_3:pressed {
-image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
+image: url(/home/cnc/.iMG/CNC_Zero_pressed.png);
 }</string>
         </property>
         <property name="text">
@@ -5079,7 +5090,7 @@ background-color: rgb(136, 138, 133,0);</string>
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Ref_Sprite.png);
+image: url(/home/cnc/.iMG//CNC_Ref_Sprite.png);
 }</string>
         </property>
         <property name="text">
@@ -5106,7 +5117,7 @@ image: url(/home/cnc/Downloads/CNC_Ref_Sprite.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Mode_Manual_Sprite.png);
+image: url(/home/cnc/.iMG/CNC_Mode_Manual_Sprite.png);
 }</string>
         </property>
         <property name="text">
@@ -5133,7 +5144,7 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_Sprite.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Mode_MDI_Sprite.png);
+image: url(/home/cnc/.iMG/CNC_Mode_MDI_Sprite.png);
 }</string>
         </property>
         <property name="text">
@@ -5154,7 +5165,8 @@ image: url(/home/cnc/Downloads/CNC_Mode_MDI_Sprite.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Mode_Auto_Sprite.png);
+image: url(/home/cnc/.iMG/CNC_Mode_Auto_Sprite.png);
+
 }</string>
         </property>
         <property name="text">
@@ -5212,11 +5224,11 @@ font: 40pt &quot;Bebas Kai&quot;;
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/CNC_Zero.png);
+image: url(/home/cnc/.iMG/CNC_Zero.png);
 }
 
 #ZeroXY :pressed {
-image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
+image: url(/home/cnc/.iMG/CNC_Zero_pressed.png);
 }</string>
         </property>
         <property name="text">
@@ -5391,11 +5403,11 @@ image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
 background-color: transparent;
 background: none;
 border:none;
-image: url(/home/cnc/Downloads/Home2.png);
+image: url(/home/cnc/.iMG/Home2.png);
 }
 
 #axisactionbutton_16:pressed {
-image: url(/home/cnc/Downloads/CNC_off_toggle.png);
+image: url(/home/cnc/.iMG/CNC_off_toggle.png);
 }</string>
         </property>
         <property name="text">

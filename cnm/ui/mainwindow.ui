@@ -1717,10 +1717,10 @@ color: rgb(237, 51, 59);</string>
                 <widget class="GcodeTextEdit" name="gcodetextedit_2">
                  <property name="geometry">
                   <rect>
-                   <x>530</x>
-                   <y>400</y>
-                   <width>301</width>
-                   <height>501</height>
+                   <x>0</x>
+                   <y>320</y>
+                   <width>531</width>
+                   <height>251</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -1851,9 +1851,9 @@ color: rgb(237, 51, 59);</string>
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>330</y>
-                   <width>531</width>
-                   <height>571</height>
+                   <y>570</y>
+                   <width>831</width>
+                   <height>331</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -1872,9 +1872,9 @@ color: rgb(237, 51, 59);</string>
                  </property>
                  <property name="backgroundColor" stdset="0">
                   <color>
-                   <red>153</red>
-                   <green>193</green>
-                   <blue>241</blue>
+                   <red>214</red>
+                   <green>229</green>
+                   <blue>238</blue>
                   </color>
                  </property>
                 </widget>

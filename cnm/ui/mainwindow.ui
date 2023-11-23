@@ -353,7 +353,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
                  <property name="geometry">
                   <rect>
                    <x>120</x>
-                   <y>120</y>
+                   <y>125</y>
                    <width>400</width>
                    <height>70</height>
                   </rect>
@@ -578,8 +578,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_5">
                  <property name="geometry">
                   <rect>
-                   <x>580</x>
-                   <y>110</y>
+                   <x>590</x>
+                   <y>60</y>
                    <width>51</width>
                    <height>31</height>
                   </rect>
@@ -614,7 +614,7 @@ background-color: rgb(136, 138, 133,0);
                  <property name="geometry">
                   <rect>
                    <x>520</x>
-                   <y>164</y>
+                   <y>130</y>
                    <width>141</width>
                    <height>35</height>
                   </rect>
@@ -634,7 +634,7 @@ background-color: rgb(136, 138, 133,0);
                  <property name="font">
                   <font>
                    <family>LCD MONO</family>
-                   <pointsize>22</pointsize>
+                   <pointsize>23</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
                    <bold>false</bold>
@@ -648,7 +648,7 @@ background-color: rgb(136, 138, 133,0);
 background-color: rgb(136, 138, 133,0);
     border-style: transparant;
 color: rgb(56, 54, 57);
-    font: 22pt &quot;LCD MONO&quot;;
+    font: 23pt &quot;LCD MONO&quot;;
 	border-color: rgb(164, 0, 0);
 }</string>
                  </property>
@@ -678,9 +678,9 @@ color: rgb(56, 54, 57);
                  <property name="geometry">
                   <rect>
                    <x>520</x>
-                   <y>314</y>
+                   <y>230</y>
                    <width>141</width>
-                   <height>35</height>
+                   <height>38</height>
                   </rect>
                  </property>
                  <property name="minimumSize">
@@ -698,7 +698,7 @@ color: rgb(56, 54, 57);
                  <property name="font">
                   <font>
                    <family>LCD MONO</family>
-                   <pointsize>22</pointsize>
+                   <pointsize>23</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
                    <bold>false</bold>
@@ -712,7 +712,7 @@ color: rgb(56, 54, 57);
 background-color: rgb(136, 138, 133,0);
     border-style: transparant;
 color: rgb(56, 54, 57);
-    font: 22pt &quot;LCD MONO&quot;;
+    font: 23pt &quot;LCD MONO&quot;;
 	border-color: rgb(164, 0, 0);
 }</string>
                  </property>
@@ -741,8 +741,8 @@ color: rgb(56, 54, 57);
                 <widget class="DROLineEdit" name="dro_entry_main_x_7">
                  <property name="geometry">
                   <rect>
-                   <x>660</x>
-                   <y>309</y>
+                   <x>670</x>
+                   <y>230</y>
                    <width>151</width>
                    <height>38</height>
                   </rect>
@@ -762,7 +762,7 @@ color: rgb(56, 54, 57);
                  <property name="font">
                   <font>
                    <family>LCD MONO</family>
-                   <pointsize>24</pointsize>
+                   <pointsize>23</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
                    <bold>false</bold>
@@ -776,7 +776,7 @@ color: rgb(56, 54, 57);
 background-color: rgb(136, 138, 133,0);
     border-style: transparant;
 color: rgb(56, 54, 57);
-    font: 24pt &quot;LCD MONO&quot;;
+    font: 23pt &quot;LCD MONO&quot;;
 	border-color: rgb(164, 0, 0);
 }</string>
                  </property>
@@ -805,8 +805,8 @@ color: rgb(56, 54, 57);
                 <widget class="DROLineEdit" name="dro_entry_main_x_8">
                  <property name="geometry">
                   <rect>
-                   <x>660</x>
-                   <y>169</y>
+                   <x>670</x>
+                   <y>130</y>
                    <width>151</width>
                    <height>38</height>
                   </rect>
@@ -826,7 +826,7 @@ color: rgb(56, 54, 57);
                  <property name="font">
                   <font>
                    <family>LCD MONO</family>
-                   <pointsize>24</pointsize>
+                   <pointsize>23</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
                    <bold>false</bold>
@@ -840,7 +840,7 @@ color: rgb(56, 54, 57);
 background-color: rgb(136, 138, 133,0);
     border-style: transparant;
 color: rgb(56, 54, 57);
-    font: 24pt &quot;LCD MONO&quot;;
+    font: 23pt &quot;LCD MONO&quot;;
 	border-color: rgb(164, 0, 0);
 }</string>
                  </property>
@@ -869,8 +869,8 @@ color: rgb(56, 54, 57);
                 <widget class="QLabel" name="label_7">
                  <property name="geometry">
                   <rect>
-                   <x>76</x>
-                   <y>595</y>
+                   <x>550</x>
+                   <y>335</y>
                    <width>81</width>
                    <height>101</height>
                   </rect>
@@ -901,9 +901,9 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="StatusLabel" name="statuslabel_15">
                  <property name="geometry">
                   <rect>
-                   <x>196</x>
-                   <y>595</y>
-                   <width>105</width>
+                   <x>710</x>
+                   <y>338</y>
+                   <width>110</width>
                    <height>45</height>
                   </rect>
                  </property>
@@ -950,10 +950,10 @@ color: rgb(56, 54, 57);
                 <widget class="StatusLabel" name="statuslabel_13">
                  <property name="geometry">
                   <rect>
-                   <x>196</x>
-                   <y>647</y>
-                   <width>105</width>
-                   <height>38</height>
+                   <x>710</x>
+                   <y>385</y>
+                   <width>110</width>
+                   <height>45</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -999,8 +999,8 @@ color: rgb(56, 54, 57);
                 <widget class="QLabel" name="label_9">
                  <property name="geometry">
                   <rect>
-                   <x>80</x>
-                   <y>550</y>
+                   <x>590</x>
+                   <y>290</y>
                    <width>211</width>
                    <height>31</height>
                   </rect>
@@ -1031,8 +1031,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_10">
                  <property name="geometry">
                   <rect>
-                   <x>160</x>
-                   <y>600</y>
+                   <x>654</x>
+                   <y>340</y>
                    <width>51</width>
                    <height>31</height>
                   </rect>
@@ -1063,8 +1063,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_11">
                  <property name="geometry">
                   <rect>
-                   <x>160</x>
-                   <y>650</y>
+                   <x>654</x>
+                   <y>390</y>
                    <width>51</width>
                    <height>31</height>
                   </rect>
@@ -1095,8 +1095,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_12">
                  <property name="geometry">
                   <rect>
-                   <x>670</x>
-                   <y>144</y>
+                   <x>690</x>
+                   <y>100</y>
                    <width>71</width>
                    <height>31</height>
                   </rect>
@@ -1128,8 +1128,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_14">
                  <property name="geometry">
                   <rect>
-                   <x>670</x>
-                   <y>284</y>
+                   <x>690</x>
+                   <y>200</y>
                    <width>71</width>
                    <height>31</height>
                   </rect>
@@ -1213,8 +1213,8 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_15">
                  <property name="geometry">
                   <rect>
-                   <x>690</x>
-                   <y>110</y>
+                   <x>700</x>
+                   <y>60</y>
                    <width>101</width>
                    <height>31</height>
                   </rect>
@@ -4244,85 +4244,6 @@ image: url(/home/cnc/.iMG/CNC_Zero_pressed.png);
          <string>G10 L20 P{ch[0]} X0.0</string>
         </property>
        </widget>
-       <widget class="MDIButton" name="zero_y_button_9">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="geometry">
-         <rect>
-          <x>947</x>
-          <y>310</y>
-          <width>125</width>
-          <height>95</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>125</width>
-          <height>95</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>126</width>
-          <height>95</height>
-         </size>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#zero_y_button_9 {
-font: 40pt &quot;Bebas Kai&quot;;
-background-color: transparent;
-background: none;
-border:none;
-image: url(/home/cnc/.iMG//CNC_Zero.png);
-}
-
-#zero_y_button_9:pressed {
-image: url(/home/cnc/.iMG//CNC_Zero_pressed.png);
-}</string>
-        </property>
-        <property name="text">
-         <string>Y</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../../../probe_basic/src/probe_basic/probe_basic.qrc">
-          <normaloff>:/images/zero.png</normaloff>:/images/zero.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="rules" stdset="0">
-         <string>[
-    {
-        &quot;channels&quot;: [
-            {
-                &quot;url&quot;: &quot;status:g5x_index&quot;,
-                &quot;trigger&quot;: true,
-                &quot;type&quot;: &quot;int&quot;
-            }
-        ],
-        &quot;expression&quot;: &quot;&quot;,
-        &quot;name&quot;: &quot;G5x Index&quot;,
-        &quot;property&quot;: &quot;None&quot;
-    }
-]</string>
-        </property>
-        <property name="MDICommand" stdset="0">
-         <string>G10 L20 P{ch[0]} Y0.0</string>
-        </property>
-       </widget>
        <widget class="MDIButton" name="zero_z_button_9">
         <property name="enabled">
          <bool>false</bool>
@@ -4330,7 +4251,7 @@ image: url(/home/cnc/.iMG//CNC_Zero_pressed.png);
         <property name="geometry">
          <rect>
           <x>947</x>
-          <y>410</y>
+          <y>310</y>
           <width>125</width>
           <height>95</height>
          </rect>
@@ -4761,55 +4682,6 @@ image: url(/home/cnc/Downloads/CNC_Zero_pressed.png);
         </property>
         <property name="text">
          <string>Go X Y Zero</string>
-        </property>
-       </widget>
-       <widget class="ActionButton" name="axisactionbutton_16">
-        <property name="geometry">
-         <rect>
-          <x>-10</x>
-          <y>480</y>
-          <width>125</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>125</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>125</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#axisactionbutton_16{
-background-color: transparent;
-background: none;
-border:none;
-image: url(/home/cnc/.iMG/Home2.png);
-}
-
-#axisactionbutton_16:pressed {
-image: url(/home/cnc/.iMG/CNC_off_toggle.png);
-}</string>
-        </property>
-        <property name="text">
-         <string>REF X</string>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>machine.home.axis:x</string>
         </property>
        </widget>
        <widget class="ActionButton" name="x_plus_jogbutton">

@@ -354,7 +354,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
                   <rect>
                    <x>110</x>
                    <y>120</y>
-                   <width>361</width>
+                   <width>370</width>
                    <height>70</height>
                   </rect>
                  </property>
@@ -391,10 +391,25 @@ color: rgb(56, 54, 57);
 }</string>
                  </property>
                  <property name="text">
-                  <string>   0.0000</string>
+                  <string>     0.000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="referenceType" stdset="0">
+                  <number>1</number>
+                 </property>
+                 <property name="axisNumber" stdset="0">
+                  <number>0</number>
+                 </property>
+                 <property name="inchFormat" stdset="0">
+                  <string>%9.4f</string>
+                 </property>
+                 <property name="millimeterFormat" stdset="0">
+                  <string>%10.3f</string>
+                 </property>
+                 <property name="degreeFormat" stdset="0">
+                  <string>%10.2f</string>
                  </property>
                  <property name="latheMode" stdset="0">
                   <number>1</number>
@@ -403,9 +418,9 @@ color: rgb(56, 54, 57);
                 <widget class="DROLineEdit" name="dro_entry_main_z_3">
                  <property name="geometry">
                   <rect>
-                   <x>70</x>
-                   <y>445</y>
-                   <width>230</width>
+                   <x>110</x>
+                   <y>230</y>
+                   <width>370</width>
                    <height>70</height>
                   </rect>
                  </property>
@@ -417,14 +432,14 @@ color: rgb(56, 54, 57);
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>320</width>
+                   <width>400</width>
                    <height>70</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>LCD MONO</family>
-                   <pointsize>36</pointsize>
+                   <family>Digital Display</family>
+                   <pointsize>80</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
                    <bold>false</bold>
@@ -438,7 +453,6 @@ color: rgb(56, 54, 57);
 background-color: rgb(136, 138, 133,0);
     border-style: transparant;
 color: rgb(56, 54, 57);
-    font: 36pt &quot;LCD MONO&quot;;
 	border-color: rgb(164, 0, 0);
 }</string>
                  </property>
@@ -471,17 +485,17 @@ color: rgb(56, 54, 57);
                  <property name="geometry">
                   <rect>
                    <x>20</x>
-                   <y>120</y>
-                   <width>51</width>
-                   <height>70</height>
+                   <y>110</y>
+                   <width>111</width>
+                   <height>91</height>
                   </rect>
                  </property>
                  <property name="font">
                   <font>
-                   <family>LCDMono</family>
-                   <pointsize>40</pointsize>
+                   <family>Noto Sans Mono</family>
+                   <pointsize>70</pointsize>
                    <weight>75</weight>
-                   <italic>true</italic>
+                   <italic>false</italic>
                    <bold>true</bold>
                   </font>
                  </property>
@@ -489,7 +503,7 @@ color: rgb(56, 54, 57);
                   <enum>Qt::RightToLeft</enum>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(0, 102, 220);
+                  <string notr="true">color: rgb(1, 123, 206);
 background-color: rgb(136, 138, 133,0);
  
  </string>
@@ -501,26 +515,26 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_3">
                  <property name="geometry">
                   <rect>
-                   <x>10</x>
-                   <y>445</y>
-                   <width>51</width>
-                   <height>70</height>
+                   <x>20</x>
+                   <y>210</y>
+                   <width>101</width>
+                   <height>101</height>
                   </rect>
                  </property>
                  <property name="font">
                   <font>
-                   <family>LCDMono</family>
-                   <pointsize>40</pointsize>
-                   <weight>50</weight>
+                   <family>Noto Sans Mono</family>
+                   <pointsize>70</pointsize>
+                   <weight>75</weight>
                    <italic>false</italic>
-                   <bold>false</bold>
+                   <bold>true</bold>
                   </font>
                  </property>
                  <property name="layoutDirection">
                   <enum>Qt::RightToLeft</enum>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(0, 102, 220);
+                  <string notr="true">color: rgb(1, 123, 206);
 background-color: rgb(136, 138, 133,0);
  
  
@@ -533,18 +547,17 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="QLabel" name="label_4">
                  <property name="geometry">
                   <rect>
-                   <x>134</x>
+                   <x>220</x>
                    <y>70</y>
-                   <width>181</width>
+                   <width>271</width>
                    <height>31</height>
                   </rect>
                  </property>
                  <property name="font">
                   <font>
                    <family>lcd phone</family>
-                   <pointsize>17</pointsize>
+                   <pointsize>23</pointsize>
                    <weight>50</weight>
-                   <italic>false</italic>
                    <bold>false</bold>
                   </font>
                  </property>
@@ -1147,9 +1160,9 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="StatusLabel" name="statuslabel_12">
                  <property name="geometry">
                   <rect>
-                   <x>10</x>
-                   <y>74</y>
-                   <width>131</width>
+                   <x>30</x>
+                   <y>70</y>
+                   <width>181</width>
                    <height>30</height>
                   </rect>
                  </property>
@@ -1174,9 +1187,8 @@ background-color: rgb(136, 138, 133,0);
                  <property name="font">
                   <font>
                    <family>lcd phone</family>
-                   <pointsize>17</pointsize>
+                   <pointsize>23</pointsize>
                    <weight>50</weight>
-                   <italic>false</italic>
                    <bold>false</bold>
                   </font>
                  </property>
@@ -1358,7 +1370,7 @@ background-color: qlineargradient(spread:pad, x1:0.4, y1:0.4, x2:1, y2:1, stop:0
                 <widget class="StatusLabel" name="Homed_label">
                  <property name="geometry">
                   <rect>
-                   <x>205</x>
+                   <x>250</x>
                    <y>15</y>
                    <width>81</width>
                    <height>31</height>
@@ -1449,7 +1461,7 @@ background-color: rgb(136, 138, 133,0);
                  <property name="font">
                   <font>
                    <family>lcd phone</family>
-                   <pointsize>15</pointsize>
+                   <pointsize>17</pointsize>
                    <weight>50</weight>
                    <bold>false</bold>
                   </font>
@@ -5685,7 +5697,7 @@ color: rgb(56, 54, 57);
         <widget class="QLabel" name="label_26">
          <property name="geometry">
           <rect>
-           <x>230</x>
+           <x>260</x>
            <y>5</y>
            <width>60</width>
            <height>60</height>
@@ -5794,7 +5806,7 @@ image: url(/home/cnc/.iMG/CNC_Mode_Auto_Sprite.png);
         <widget class="StatusLED" name="statusled_7">
          <property name="geometry">
           <rect>
-           <x>230</x>
+           <x>260</x>
            <y>5</y>
            <width>60</width>
            <height>60</height>
@@ -5943,7 +5955,7 @@ image: url(/home/cnc/.iMG/CNC_Mode_Auto_Sprite.png);
          <property name="font">
           <font>
            <family>lcd phone</family>
-           <pointsize>13</pointsize>
+           <pointsize>15</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>

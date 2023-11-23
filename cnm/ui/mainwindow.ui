@@ -353,7 +353,7 @@ image: url(/home/cnc/.iMG/CNC_Main_3_fw.png);
                  <property name="geometry">
                   <rect>
                    <x>120</x>
-                   <y>130</y>
+                   <y>120</y>
                    <width>400</width>
                    <height>70</height>
                   </rect>
@@ -1931,7 +1931,7 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
                  <property name="geometry">
                   <rect>
                    <x>580</x>
-                   <y>545</y>
+                   <y>600</y>
                    <width>70</width>
                    <height>70</height>
                   </rect>
@@ -1974,7 +1974,7 @@ image: url(/home/cnc/Downloads/CNC_Mode_MDI_pressed.png);
                  <property name="geometry">
                   <rect>
                    <x>490</x>
-                   <y>545</y>
+                   <y>600</y>
                    <width>70</width>
                    <height>70</height>
                   </rect>

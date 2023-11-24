@@ -2108,10 +2108,10 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="VTKBackPlot" name="vtk">
                  <property name="geometry">
                   <rect>
-                   <x>250</x>
+                   <x>0</x>
                    <y>570</y>
-                   <width>591</width>
-                   <height>331</height>
+                   <width>831</width>
+                   <height>341</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
@@ -2136,111 +2136,47 @@ background-color: rgb(136, 138, 133,0);
                   </color>
                  </property>
                 </widget>
-                <widget class="StatusLabel" name="statuslabel_24">
-                 <property name="enabled">
-                  <bool>true</bool>
-                 </property>
+                <widget class="QPushButton" name="perspective_button">
                  <property name="geometry">
                   <rect>
-                   <x>10</x>
-                   <y>580</y>
-                   <width>231</width>
-                   <height>131</height>
+                   <x>200</x>
+                   <y>1010</y>
+                   <width>75</width>
+                   <height>33</height>
                   </rect>
                  </property>
                  <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
-                   <verstretch>1</verstretch>
+                   <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
                  <property name="minimumSize">
                   <size>
-                   <width>35</width>
-                   <height>0</height>
+                   <width>75</width>
+                   <height>33</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>300</width>
-                   <height>300</height>
+                   <width>75</width>
+                   <height>33</height>
                   </size>
                  </property>
-                 <property name="font">
-                  <font>
-                   <family>lcd phone</family>
-                   <pointsize>24</pointsize>
-                  </font>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true"/>
                  </property>
-                 <property name="alignment">
-                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 <property name="text">
+                  <string>PSPECT</string>
                  </property>
-                 <property name="wordWrap">
+                 <property name="checkable">
                   <bool>true</bool>
                  </property>
-                 <property name="indent">
-                  <number>0</number>
-                 </property>
-                 <property name="rules" stdset="0">
-                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:gcodes?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;active_g_codes&quot;}]</string>
-                 </property>
-                 <property name="statusItem" stdset="0">
-                  <string/>
-                 </property>
-                </widget>
-                <widget class="StatusLabel" name="statuslabel_26">
-                 <property name="geometry">
-                  <rect>
-                   <x>10</x>
-                   <y>720</y>
-                   <width>211</width>
-                   <height>111</height>
-                  </rect>
-                 </property>
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>35</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>300</width>
-                   <height>300</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>lcd phone</family>
-                   <pointsize>24</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                 </property>
-                 <property name="wordWrap">
+                 <property name="autoExclusive">
                   <bool>true</bool>
-                 </property>
-                 <property name="indent">
-                  <number>0</number>
-                 </property>
-                 <property name="rules" stdset="0">
-                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:mcodes?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;active_m_codes&quot;}]</string>
-                 </property>
-                 <property name="statusItem" stdset="0">
-                  <string/>
                  </property>
                 </widget>
                 <zorder>dro_entry_main_x_3</zorder>
@@ -2283,8 +2219,7 @@ background-color: rgb(136, 138, 133,0);
                 <zorder>label_24</zorder>
                 <zorder>label_44</zorder>
                 <zorder>vtk</zorder>
-                <zorder>statuslabel_24</zorder>
-                <zorder>statuslabel_26</zorder>
+                <zorder>perspective_button</zorder>
                </widget>
               </item>
              </layout>
@@ -5496,168 +5431,6 @@ image: url(/home/cnc/.iMG/E_Stop_Inac.png);
          <string>machine.estop.toggle</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_27">
-        <property name="geometry">
-         <rect>
-          <x>164</x>
-          <y>1572</y>
-          <width>51</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>lcd phone</family>
-          <pointsize>12</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::RightToLeft</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(191, 64, 64);
-color: rgb(1, 123, 206);
-background-color: rgb(136, 138, 133,0);
- 
- </string>
-        </property>
-        <property name="text">
-         <string>REAL:</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_28">
-        <property name="geometry">
-         <rect>
-          <x>164</x>
-          <y>1522</y>
-          <width>51</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>lcd phone</family>
-          <pointsize>12</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::RightToLeft</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(191, 64, 64);
-color: rgb(1, 123, 206);
-background-color: rgb(136, 138, 133,0);
- 
- </string>
-        </property>
-        <property name="text">
-         <string>PROG:</string>
-        </property>
-       </widget>
-       <widget class="StatusLabel" name="statuslabel_18">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>1567</y>
-          <width>105</width>
-          <height>45</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>105</width>
-          <height>38</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>110</width>
-          <height>45</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel {
-background-color: rgb(136, 138, 133,0);
-    border-style: transparant;
-color: rgb(56, 54, 57);
-    font: 25pt &quot;LCD MONO&quot;;
-	border-color: rgb(164, 0, 0);
-}</string>
-        </property>
-        <property name="text">
-         <string>0.0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-        </property>
-        <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings?speed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str( ch[0] )&quot;, &quot;name&quot;: &quot;S Word&quot;}]</string>
-        </property>
-        <property name="format" stdset="0">
-         <string/>
-        </property>
-       </widget>
-       <widget class="StatusLabel" name="statuslabel_16">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>1520</y>
-          <width>105</width>
-          <height>38</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>105</width>
-          <height>38</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>105</width>
-          <height>38</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLabel {
-background-color: rgb(136, 138, 133,0);
-    border-style: transparant;
-color: rgb(56, 54, 57);
-    font: 25pt &quot;LCD MONO&quot;;
-	border-color: rgb(164, 0, 0);
-}</string>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-        </property>
-        <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:.0f}\&quot;.format(ch[0] * ch[1])&quot;, &quot;name&quot;: &quot;Speed&quot;}]</string>
-        </property>
-        <property name="format" stdset="0">
-         <string>{:.0f}</string>
-        </property>
-       </widget>
        <widget class="QFrame" name="frame_5">
         <property name="geometry">
          <rect>
@@ -6173,6 +5946,431 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
          <string>machine.mode.manual</string>
         </property>
        </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>1320</y>
+          <width>81</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(145, 65, 172);</string>
+        </property>
+        <property name="text">
+         <string>PGM BDRY</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-program-bounds</string>
+        </property>
+       </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton_2">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>1320</y>
+          <width>81</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>MCH BDRY</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-machine-bounds</string>
+        </property>
+       </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton_3">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>1320</y>
+          <width>71</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>PGM TICKS</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-program-ticks</string>
+        </property>
+       </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton_4">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>1320</y>
+          <width>81</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>MCH TICKS</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-machine-ticks</string>
+        </property>
+       </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton_5">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>1320</y>
+          <width>71</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>PGM LABEL</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-program-labels</string>
+        </property>
+       </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton_6">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>1320</y>
+          <width>81</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>MCH LABEL</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-machine-labels</string>
+        </property>
+       </widget>
+       <widget class="VCPSettingsPushButton" name="settings_pushbutton_7">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>1320</y>
+          <width>71</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>DejaVu Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>PLOT GRID</string>
+        </property>
+        <property name="settingName" stdset="0">
+         <string>backplot.show-grid</string>
+        </property>
+       </widget>
+       <widget class="StatusLabel" name="statuslabel_24">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>1520</y>
+          <width>181</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>lcd phone</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="indent">
+         <number>0</number>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:gcodes?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;active_g_codes&quot;}]</string>
+        </property>
+        <property name="statusItem" stdset="0">
+         <string/>
+        </property>
+       </widget>
+       <widget class="StatusLabel" name="statuslabel_26">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>1490</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>lcd phone</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="indent">
+         <number>0</number>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:mcodes?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;active_m_codes&quot;}]</string>
+        </property>
+        <property name="statusItem" stdset="0">
+         <string/>
+        </property>
+       </widget>
        <zorder>tabWidget</zorder>
        <zorder>stop</zorder>
        <zorder>Ref_x_LED</zorder>
@@ -6203,10 +6401,6 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
        <zorder>Stop</zorder>
        <zorder>Start</zorder>
        <zorder>EStoper</zorder>
-       <zorder>label_27</zorder>
-       <zorder>label_28</zorder>
-       <zorder>statuslabel_18</zorder>
-       <zorder>statuslabel_16</zorder>
        <zorder>frame_5</zorder>
        <zorder>mode_mdi</zorder>
        <zorder>mode_auto</zorder>
@@ -6214,6 +6408,15 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
        <zorder>mode_manual</zorder>
        <zorder>statusled</zorder>
        <zorder>statusled_3</zorder>
+       <zorder>settings_pushbutton</zorder>
+       <zorder>settings_pushbutton_2</zorder>
+       <zorder>settings_pushbutton_3</zorder>
+       <zorder>settings_pushbutton_4</zorder>
+       <zorder>settings_pushbutton_5</zorder>
+       <zorder>settings_pushbutton_6</zorder>
+       <zorder>settings_pushbutton_7</zorder>
+       <zorder>statuslabel_24</zorder>
+       <zorder>statuslabel_26</zorder>
       </widget>
      </widget>
     </item>
@@ -6324,6 +6527,11 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
    <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
   </customwidget>
   <customwidget>
+   <class>VCPSettingsPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
    <class>DROLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
@@ -6388,6 +6596,22 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
     <hint type="destinationlabel">
      <x>488</x>
      <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>perspective_button</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewPersp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>1168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>882</y>
     </hint>
    </hints>
   </connection>

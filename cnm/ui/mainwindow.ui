@@ -2108,9 +2108,9 @@ background-color: rgb(136, 138, 133,0);
                 <widget class="VTKBackPlot" name="vtk">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>250</x>
                    <y>570</y>
-                   <width>841</width>
+                   <width>591</width>
                    <height>331</height>
                   </rect>
                  </property>
@@ -2134,6 +2134,113 @@ background-color: rgb(136, 138, 133,0);
                    <green>36</green>
                    <blue>37</blue>
                   </color>
+                 </property>
+                </widget>
+                <widget class="StatusLabel" name="statuslabel_24">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>580</y>
+                   <width>231</width>
+                   <height>131</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>35</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>300</width>
+                   <height>300</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>lcd phone</family>
+                   <pointsize>24</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                 <property name="rules" stdset="0">
+                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:gcodes?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;active_g_codes&quot;}]</string>
+                 </property>
+                 <property name="statusItem" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="StatusLabel" name="statuslabel_26">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>720</y>
+                   <width>211</width>
+                   <height>111</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>35</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>300</width>
+                   <height>300</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>lcd phone</family>
+                   <pointsize>24</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                 <property name="rules" stdset="0">
+                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:mcodes?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;active_m_codes&quot;}]</string>
+                 </property>
+                 <property name="statusItem" stdset="0">
+                  <string/>
                  </property>
                 </widget>
                 <zorder>dro_entry_main_x_3</zorder>
@@ -2176,6 +2283,8 @@ background-color: rgb(136, 138, 133,0);
                 <zorder>label_24</zorder>
                 <zorder>label_44</zorder>
                 <zorder>vtk</zorder>
+                <zorder>statuslabel_24</zorder>
+                <zorder>statuslabel_26</zorder>
                </widget>
               </item>
              </layout>
@@ -5419,40 +5528,6 @@ background-color: rgb(136, 138, 133,0);
          <string>REAL:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_8">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>1517</y>
-          <width>91</width>
-          <height>101</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>LCDMono</family>
-          <pointsize>68</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::RightToLeft</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(56, 54, 57);
-background-color: rgb(136, 138, 133,0);
- 
- </string>
-        </property>
-        <property name="text">
-         <string>S:</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_28">
         <property name="geometry">
          <rect>
@@ -6129,7 +6204,6 @@ image: url(/home/cnc/Downloads/CNC_Mode_Manual_pressed.png);
        <zorder>Start</zorder>
        <zorder>EStoper</zorder>
        <zorder>label_27</zorder>
-       <zorder>label_8</zorder>
        <zorder>label_28</zorder>
        <zorder>statuslabel_18</zorder>
        <zorder>statuslabel_16</zorder>

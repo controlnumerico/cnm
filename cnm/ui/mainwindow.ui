@@ -873,7 +873,7 @@ color: rgb(56, 54, 57);
                  <property name="geometry">
                   <rect>
                    <x>550</x>
-                   <y>300</y>
+                   <y>290</y>
                    <width>81</width>
                    <height>101</height>
                   </rect>
@@ -881,7 +881,7 @@ color: rgb(56, 54, 57);
                  <property name="font">
                   <font>
                    <family>LCDMono</family>
-                   <pointsize>68</pointsize>
+                   <pointsize>60</pointsize>
                    <weight>75</weight>
                    <italic>false</italic>
                    <bold>true</bold>
@@ -954,7 +954,7 @@ color: rgb(56, 54, 57);
                  <property name="geometry">
                   <rect>
                    <x>710</x>
-                   <y>350</y>
+                   <y>345</y>
                    <width>110</width>
                    <height>45</height>
                   </rect>
@@ -1002,9 +1002,9 @@ color: rgb(56, 54, 57);
                 <widget class="QLabel" name="label_9">
                  <property name="geometry">
                   <rect>
-                   <x>640</x>
+                   <x>580</x>
                    <y>265</y>
-                   <width>81</width>
+                   <width>221</width>
                    <height>31</height>
                   </rect>
                  </property>
@@ -1028,7 +1028,7 @@ background-color: rgb(136, 138, 133,0);
  </string>
                  </property>
                  <property name="text">
-                  <string>FEEDs</string>
+                  <string>FEEDs &amp; SPEEDs</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="label_10">
@@ -1067,7 +1067,7 @@ background-color: rgb(136, 138, 133,0);
                  <property name="geometry">
                   <rect>
                    <x>654</x>
-                   <y>355</y>
+                   <y>350</y>
                    <width>51</width>
                    <height>31</height>
                   </rect>
@@ -1742,13 +1742,13 @@ color: rgb(237, 51, 59);</string>
                   <string notr="true"/>
                  </property>
                  <property name="frameShape">
-                  <enum>QFrame::NoFrame</enum>
+                  <enum>QFrame::Box</enum>
                  </property>
                  <property name="frameShadow">
                   <enum>QFrame::Plain</enum>
                  </property>
                  <property name="lineWidth">
-                  <number>0</number>
+                  <number>1</number>
                  </property>
                  <property name="sizeAdjustPolicy">
                   <enum>QAbstractScrollArea::AdjustIgnored</enum>
@@ -1847,12 +1847,270 @@ color: rgb(237, 51, 59);</string>
                   <enum>Qt::Horizontal</enum>
                  </property>
                 </widget>
+                <widget class="QLabel" name="label_13">
+                 <property name="geometry">
+                  <rect>
+                   <x>400</x>
+                   <y>340</y>
+                   <width>101</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>lcd phone</family>
+                   <pointsize>20</pointsize>
+                   <weight>75</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(191, 64, 64);
+color: rgb(1, 123, 206);
+background-color: rgb(136, 138, 133,0);
+ 
+ </string>
+                 </property>
+                 <property name="text">
+                  <string>G-Code</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_17">
+                 <property name="geometry">
+                  <rect>
+                   <x>546</x>
+                   <y>380</y>
+                   <width>81</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>LCDMono</family>
+                   <pointsize>60</pointsize>
+                   <weight>75</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(56, 54, 57);
+background-color: rgb(136, 138, 133,0);
+ 
+ 
+ </string>
+                 </property>
+                 <property name="text">
+                  <string>S:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_21">
+                 <property name="geometry">
+                  <rect>
+                   <x>650</x>
+                   <y>395</y>
+                   <width>51</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>lcd phone</family>
+                   <pointsize>12</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(191, 64, 64);
+color: rgb(1, 123, 206);
+background-color: rgb(136, 138, 133,0);
+ 
+ </string>
+                 </property>
+                 <property name="text">
+                  <string>PROG:</string>
+                 </property>
+                </widget>
+                <widget class="StatusLabel" name="statuslabel_17">
+                 <property name="geometry">
+                  <rect>
+                   <x>706</x>
+                   <y>393</y>
+                   <width>110</width>
+                   <height>45</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>105</width>
+                   <height>38</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>110</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+background-color: rgb(136, 138, 133,0);
+    border-style: transparant;
+color: rgb(56, 54, 57);
+    font: 25pt &quot;LCD MONO&quot;;
+	border-color: rgb(164, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="rules" stdset="0">
+                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'%.0f' % ch[0][1]&quot;, &quot;name&quot;: &quot;F Word&quot;}]</string>
+                 </property>
+                 <property name="format" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="StatusLabel" name="statuslabel_14">
+                 <property name="geometry">
+                  <rect>
+                   <x>706</x>
+                   <y>435</y>
+                   <width>110</width>
+                   <height>45</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>105</width>
+                   <height>38</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>110</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+background-color: rgb(136, 138, 133,0);
+    border-style: transparant;
+color: rgb(56, 54, 57);
+    font: 25pt &quot;LCD MONO&quot;;
+	border-color: rgb(164, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="rules" stdset="0">
+                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:current_vel&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'%.0f' % (ch[0] * 60)&quot;, &quot;name&quot;: &quot;cur vel&quot;}]</string>
+                 </property>
+                 <property name="format" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_24">
+                 <property name="geometry">
+                  <rect>
+                   <x>650</x>
+                   <y>440</y>
+                   <width>51</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>lcd phone</family>
+                   <pointsize>12</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(191, 64, 64);
+color: rgb(1, 123, 206);
+background-color: rgb(136, 138, 133,0);
+ 
+ </string>
+                 </property>
+                 <property name="text">
+                  <string>REAL:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_44">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>470</y>
+                   <width>81</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>LCDMono</family>
+                   <pointsize>60</pointsize>
+                   <weight>75</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(56, 54, 57);
+background-color: rgb(136, 138, 133,0);
+ 
+ 
+ </string>
+                 </property>
+                 <property name="text">
+                  <string>T:</string>
+                 </property>
+                </widget>
                 <widget class="VTKBackPlot" name="vtk">
                  <property name="geometry">
                   <rect>
                    <x>0</x>
                    <y>570</y>
-                   <width>831</width>
+                   <width>841</width>
                    <height>331</height>
                   </rect>
                  </property>
@@ -1872,9 +2130,9 @@ color: rgb(237, 51, 59);</string>
                  </property>
                  <property name="backgroundColor" stdset="0">
                   <color>
-                   <red>214</red>
-                   <green>229</green>
-                   <blue>238</blue>
+                   <red>32</red>
+                   <green>36</green>
+                   <blue>37</blue>
                   </color>
                  </property>
                 </widget>
@@ -1910,6 +2168,13 @@ color: rgb(237, 51, 59);</string>
                 <zorder>line_2</zorder>
                 <zorder>line_3</zorder>
                 <zorder>line_4</zorder>
+                <zorder>label_13</zorder>
+                <zorder>label_17</zorder>
+                <zorder>label_21</zorder>
+                <zorder>statuslabel_17</zorder>
+                <zorder>statuslabel_14</zorder>
+                <zorder>label_24</zorder>
+                <zorder>label_44</zorder>
                 <zorder>vtk</zorder>
                </widget>
               </item>

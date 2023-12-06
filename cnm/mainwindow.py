@@ -1,5 +1,4 @@
 import os
-
 from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
 from PyQt5.QtWidgets import QStatusBar, QLabel
 from qtpyvcp.actions.program_actions import load, run

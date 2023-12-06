@@ -5182,7 +5182,7 @@ border-radius: 4px;
        <widget class="JogIncrementWidget" name="jogincrement">
         <property name="geometry">
          <rect>
-          <x>510</x>
+          <x>500</x>
           <y>1710</y>
           <width>281</width>
           <height>42</height>
